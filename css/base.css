@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=Exo+2&family=Open+Sans:wght@300&family=Poppins&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=Exo+2&family=Open+Sans:wght@300&family=Oswald:wght@200;300;400&family=Poppins&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+
+}
+
+/* :root{
+    --base-color:#F5B041 
+    --light-base-color:#F7DC6F 
+    --logo-font:'Alfa Slab One', cursive;
+} */
+
+/* Header  section starts here*/
+#headerSection{
+    width: 100%;
+    height: 150px;
+   /* background-color: var(--base-color); */
+   background-image: url('../images/bg.png');
+   background-repeat: repeat;
+   background-size: cover;
+}
+
+#headerSection article{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+._logoBlock a{
+    text-decoration: none;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #444;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.logo-icon i{
+    font-size: 50px;
+}
+._menuBlock{
+    font-family: 'Oswald', sans-serif;
+    font-size: large;
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+._logoBlock{
+    flex-basis: 50%;
+}
+
+.main_menu ul{ 
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 450px;
+    padding: 20px 0 0;
+ }
+
+ .main_menu ul li a{
+    text-decoration: none;
+    color: black;
+ }
+
+.topbar_menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 368px;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.topbar_menu:first-child span{
+    margin: 0 6px;
+}
+
+/* Header  section ends here*/
+
+ /* slider starts here */
+
+
+#sliderBlock{
+    background-image: url('../images/bg.png');
+    background-repeat: repeat;
+    background-size: cover;
+    max-height: 600px;
+    min-height: 600px;
+    position: relative;
+}
+
+#sliderBlock article{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#sliderBlock article :is(.leftSlider,.rightSlider){
+    display: flex;
+    justify-content: start;
+    flex-basis: 50%;
+}
+
+.glow_img {
+   
+    width: 100px;
+    /* position: relative;
+    top: 30px; */
+   
+}
+.rightSlider{
+    position: relative;
+    
+    top:-100px;
+}
+
+.rightSlider .glow_img  img{
+    position: absolute;
+    top: -590px;
+    /* border: 2px solid red; */
+    left: 96px;
+    width: 155px;
+    
+}
+.rightSlider  div{
+    display: flex;
+    position: relative;
+    top:398px;
+
+}
+
+.burger_img{
+    position: absolute;
+    top: -473px;
+    z-index: 1;
+} 
+.drink_img{
+    position: absolute;
+    top: -615px;
+    left: 336px;
+}
+
+.french_img{
+    position: absolute;
+    top: -494px;
+    right: -40px;
+}
+
+.leftSlider h1{
+font-size: 84px;
+letter-spacing: 3px;
+text-shadow: 3px 4px white;
+text-transform: uppercase;
+
+}
+
+.leftSlider h4{
+    border: 5px dashed black;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+
+}
+
+.leftSlider h3{
+    font-size: 61px;
+    letter-spacing: 4px;
+    text-shadow: 3px 4px white;
+text-transform: uppercase;
+
+    }
+/* slider starts here */
